@@ -15,7 +15,7 @@ const Weather = props => {
 
     return (
         <div>
-            <h1>Current Weather</h1>
+            <h1>Add you custom city</h1>
             {weatherMap}
             <button onClick={addCity}>Get</button>
             <textarea onChange={changeCity}/>
