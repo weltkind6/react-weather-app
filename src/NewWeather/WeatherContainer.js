@@ -1,12 +1,16 @@
 import React from 'react'
+import Weather from "./Weather";
 
-class Example extends React.Component {
+class WeatherContainer extends React.Component {
     state = {
         city: '',
         temp: '',
         feels_like: '',
         newCity: '',
-        country: ''
+        country: '',
+        description: '',
+        id: '',
+        icon: ''
     };
 
 
@@ -21,10 +25,15 @@ class Example extends React.Component {
                 temp: Math.floor(response.main.temp - 273.15),
                 feels_like: Math.floor(response.main.feels_like - 273.15),
                 newCity: response.name,
-                country: response.sys.country
+                country: response.sys.country,
+                description: response.weather[0].description,
+                id: response.weather[0].id,
+                icon: response.weather[0].icon
             }))
             .catch(err => alert('City not found!'))
+
     }
+
 
     onPressEnter = e => {
         if (e.code === 'Enter') {
@@ -39,26 +48,17 @@ class Example extends React.Component {
     }
 
     render() {
-        const {
-            newCity,
-            temp,
-            feels_like,
-            country} = this.state
+
         return (
             <div>
-                <h3>City: {newCity}</h3>
-                <span>Country: {country}</span>
-                <p>Temp: {temp}</p>
-                <p>Feels like: {feels_like}</p>
-
-                <input type="text" placeholder={'Enter the city'} onChange={this.changeCityHandler}
-                       onKeyPress={this.onPressEnter}/>
-                <button onClick={this.cityHandler}>
-                    Get weather!
-                </button>
+                <Weather
+                    cityHandler={() => this.cityHandler()}
+                    changeCityHandler={this.changeCityHandler.bind(this)}
+                    onPressEnter={(e) => this.onPressEnter(e)}
+                    state={this.state}/>
             </div>
         );
     }
 }
 
-export default Example
+export default WeatherContainer
