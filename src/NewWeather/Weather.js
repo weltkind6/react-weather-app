@@ -16,7 +16,6 @@ const Weather = props => {
                             ? <img src={`https://openweathermap.org/img/wn/${state.icon}@2x.png`} alt='weather-state'/>
                             : null}
                         </div>
-
                     </div>
                     <h2>{state.description}</h2>
                 </div>
