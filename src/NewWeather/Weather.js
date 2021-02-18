@@ -1,11 +1,13 @@
 import React from 'react'
 import classes from './Weather.module.css'
+import RequestBlock from "./RequestBlock/RequestBlock";
 
 const Weather = props => {
     const state = props.state
     return (
         <div className={classes.weather_wrapper}>
             <div className={classes.weather_block}>
+
                 <div className={classes.temp_block}>
                     <h1>{state.newCity}</h1>
                     <div className={classes.temp_block_wrapper}>
@@ -20,27 +22,15 @@ const Weather = props => {
                 </div>
 
                 <div className={classes.request_block}>
-                    <p>Country: {state.country}</p>
-                    <p>Feels like: {state.feels_like}</p>
-
-                    <div className={classes.interface_block}>
-                        <input type="text" placeholder={'Enter the city'} onChange={props.changeCityHandler}
-                               className={classes.input}
-                               onKeyPress={props.onPressEnter}/>
-                        <button onClick={props.cityHandler} className={classes.button}>
-                            Get weather
-                        </button>
-                    </div>
+                    <RequestBlock
+                        state={state}
+                        addCity={props.cityHandler}
+                        changeCity={props.changeCityHandler}
+                    />
                 </div>
+
+
             </div>
-
-
-
-
-
-
-
-
 
 
         </div>

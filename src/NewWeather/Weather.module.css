@@ -41,31 +41,3 @@ h1, h2 {
     text-shadow: 1px 1px 2px black, 0 0 1em red;
 }
 
-.input {
-    outline: none;
-    border: none;
-    height: 2em;
-    border-radius: 5px;
-    -webkit-appearance: none;
-}
-.button {
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    vertical-align: middle;
-    font-weight: bold;
-    margin-right: 0;
-}
-.button:active {
-    background-color: darkorange;
-}
-.interface_block {
-    background-color: #fff;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-}
-
-input::placeholder {
-
-}
