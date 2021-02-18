@@ -1,0 +1,71 @@
+.weather_wrapper {
+    height: 55vh;
+    background-color: #3d7eaa;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    color: aliceblue;
+    border-radius: 2%
+}
+
+.weather_block {
+    margin: 20px;
+
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.temp_block {
+    height: 15rem;
+    padding-top: 2em;
+}
+
+.temp_block_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp_block > div {
+    font-size: 4.5em;
+}
+
+.request_block {
+    padding-top: 5em;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: bisque;
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+
+.input {
+    outline: none;
+    border: none;
+    height: 2em;
+    border-radius: 5px;
+    -webkit-appearance: none;
+}
+.button {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    vertical-align: middle;
+    font-weight: bold;
+    margin-right: 0;
+}
+.button:active {
+    background-color: darkorange;
+}
+.interface_block {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input::placeholder {
+
+}

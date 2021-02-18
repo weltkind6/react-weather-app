@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react'
-import WeatherContainer from "./NewWeather/WeatherContainer";
+import WeatherContainer from "./WeatherContainer/WeatherContainer";
 
 
 function App() {
   return (
-    <div>
+    <div className='main-wrapper'>
         <WeatherContainer />
     </div>
   );

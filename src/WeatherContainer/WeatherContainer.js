@@ -1,5 +1,5 @@
 import React from 'react'
-import Weather from "./Weather";
+import Weather from "../NewWeather/Weather";
 
 class WeatherContainer extends React.Component {
     state = {
