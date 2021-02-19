@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 .main-wrapper {
-    max-width: 20em;
+    width: 100%;
     margin: 0 auto;
+}
+@media (min-width: 1219px) {
+    .main-wrapper {
+        margin: 0 auto;
+        width: 50%;
+    }
 }

@@ -9,17 +9,6 @@ const Weather = props => {
         <div className={classes.weather_wrapper}>
             <div className={classes.weather_block}>
                 <TempBlock state={state}/>
-                {/*<div className={classes.temp_block}>*/}
-                {/*    <h1>{state.newCity}</h1>*/}
-                {/*    <div className={classes.temp_block_wrapper}>*/}
-                {/*        <div>{state.temp}</div>*/}
-                {/*        <div>{state.id > 0*/}
-                {/*            ? <img src={`https://openweathermap.org/img/wn/${state.icon}@2x.png`} alt='weather-state' className={classes.w_img}/>*/}
-                {/*            : null}*/}
-                {/*        </div>*/}
-                {/*    </div>*/}
-                {/*    <h2>{state.description}</h2>*/}
-                {/*</div>*/}
 
                 <div className={classes.request_block}>
                     <RequestBlock
@@ -29,11 +18,7 @@ const Weather = props => {
                         onPressEnter={props.onPressEnter}
                     />
                 </div>
-
-
             </div>
-
-
         </div>
     )
 }

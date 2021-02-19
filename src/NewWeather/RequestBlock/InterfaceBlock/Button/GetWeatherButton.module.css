@@ -5,7 +5,25 @@
     font-weight: bold;
     margin-right: 0;
     padding: 7px;
+    background: dodgerblue;
+    color: #ffffff;
 }
 .button:active {
     background-color: darkorange;
+    color: #000000;
+}
+
+
+@media (min-width: 768px) {
+    .button {
+        padding: 22px;
+        font-size: 17px;
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: dodgerblue;
+        border-radius: 5px;
+        border: none;
+    }
+
 }

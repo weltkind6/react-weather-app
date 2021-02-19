@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .input {
     outline: none;
     border: none;
@@ -12,7 +13,14 @@
     margin-left: .5em;
 }
 
-
-input::placeholder {
+@media (min-width: 768px) {
+    .input {
+        height: 3em;
+        font-size: .6em;
+    }
 
 }
+
+
+
+

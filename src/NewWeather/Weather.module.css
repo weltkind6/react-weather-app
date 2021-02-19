@@ -1,20 +1,46 @@
 .weather_wrapper {
-    height: 55vh;
-    background-color: #3d7eaa;
-    background-image: url(../img/background.png);
-    background-repeat: no-repeat;
+    background-image: url('https://i.ytimg.com/vi/Rj_WvUQylDo/maxresdefault.jpg');
     color: aliceblue;
-    border-radius: 2%
+    height: 100vh;
+    background-size: cover;
 }
 
 .weather_block {
-    margin: 20px;
+    padding: 20px;
 }
 
 .request_block {
-    padding-top: 5em;
+    padding-top: 4em;
     font-size: 1.4em;
     font-weight: bold;
     color: bisque;
     text-shadow: 1px 1px 2px black, 0 0 1em red;
+}
+@media (min-width: 375px) {
+    .request_block {
+        padding-top: 7em;
+    }
+}
+@media (min-height: 736px) {
+    .request_block {
+        padding-top: 10em;
+        background-size: cover;
+    }
+    .request_block {
+        font-size: 1.5em;
+    }
+    .weather_block {
+        padding: 60px 20px;
+    }
+}
+@media (min-width: 768px) {
+    .request_block {
+        margin-top: 4em;
+        font-size: 2em;
+    }
+}
+@media (min-width: 1219px) {
+    .request_block {
+        height: 500px;
+    }
 }

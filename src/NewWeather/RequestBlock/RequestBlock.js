@@ -5,8 +5,10 @@ import InterfaceBlock from "./InterfaceBlock/InterfaceBlock";
 const RequestBlock = props => {
     return (
         <div>
-            <p>Country: {props.state.country}</p>
-            <p>Feels like: {props.state.feels_like}</p>
+            <div className={classes.info_block}>
+                <p>Country: {props.state.country}</p>
+                <p>Feels like: {props.state.feels_like}</p>
+            </div>
 
             <div className={classes.interface_block}>
                 <InterfaceBlock
