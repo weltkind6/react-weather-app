@@ -9,7 +9,7 @@ const InterfaceBlock = (props) => {
             <input type="text" placeholder={'Enter the city'} onChange={props.changeCity}
                    className={classes.input}
                    onKeyPress={props.onPressEnter}/>
-            <GetWeatherButton addCity={props.addCity}/>
+            <GetWeatherButton addCity={props.addCity} onPressEnter={props.onPressEnter}/>
         </div>
     )
 }

@@ -9,28 +9,6 @@
 
 .weather_block {
     margin: 20px;
-
-}
-
-h1, h2 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.temp_block {
-    height: 15rem;
-    padding-top: 2em;
-}
-
-.temp_block_wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.temp_block > div {
-    font-size: 4.5em;
 }
 
 .request_block {
@@ -40,4 +18,3 @@ h1, h2 {
     color: bisque;
     text-shadow: 1px 1px 2px black, 0 0 1em red;
 }
-

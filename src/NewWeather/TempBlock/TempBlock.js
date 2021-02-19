@@ -1,18 +1,22 @@
 import React from 'react'
-import classes from "../Weather.module.css";
+import classes from './TempBlock.module.css'
 
-const TempBlock = () => {
+const TempBlock = props => {
     return (
-        <div>
-            {/*<h1>{state.newCity}</h1>*/}
-            {/*<div className={classes.temp_block_wrapper}>*/}
-            {/*    <div>{state.temp}</div>*/}
-            {/*    <div>{state.id > 0*/}
-            {/*        ? <img src={`https://openweathermap.org/img/wn/${state.icon}@2x.png`} alt='weather-state'/>*/}
-            {/*        : null}*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*<h2>{state.description}</h2>*/}
+        <div className={classes.temp_block}>
+            <h1>{props.state.newCity}</h1>
+            <div className={classes.temp_block_wrapper}>
+                <div>{props.state.temp}</div>
+                <div>{props.state.id > 0
+                    ? <img
+                        src={`https://openweathermap.org/img/wn/${props.state.icon}@2x.png`}
+                        alt='weather-state'
+                        className={classes.w_img}
+                    />
+                    : null}
+                </div>
+            </div>
+            <h2>{props.state.description}</h2>
         </div>
     )
 }

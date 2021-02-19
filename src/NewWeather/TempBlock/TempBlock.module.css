@@ -1,0 +1,23 @@
+.temp_block_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp_block_wrapper > div {
+    font-size: 4.5em;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.temp_block {
+    height: 15rem;
+    padding-top: 2em;
+}
+.w_img {
+    padding-top: 1rem;
+}
