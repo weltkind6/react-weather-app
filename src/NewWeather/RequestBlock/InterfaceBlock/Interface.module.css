@@ -11,6 +11,7 @@
     border-radius: 5px;
     -webkit-appearance: none;
     margin-left: .5em;
+    background-color: #fff;
 }
 
 @media (min-width: 768px) {

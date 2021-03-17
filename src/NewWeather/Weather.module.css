@@ -10,36 +10,41 @@
 }
 
 .request_block {
-    padding-top: 8em;
     font-size: 1.4em;
     font-weight: bold;
     color: bisque;
     text-shadow: 1px 1px 2px black, 0 0 1em red;
 }
+
 @media (min-width: 375px) {
     .request_block {
         padding-top: 7em;
     }
 }
+
 @media (min-height: 736px) {
     .request_block {
         background-size: cover;
     }
+
     .request_block {
         font-size: 1.5em;
     }
+
     .weather_block {
         padding: 60px 20px;
     }
 }
+
 @media (min-width: 768px) {
     .request_block {
         margin-top: 4em;
         font-size: 2em;
     }
 }
+
 @media (min-width: 1219px) {
     .request_block {
-        height: 500px;
+        margin-top: 2em;
     }
 }
