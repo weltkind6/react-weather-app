@@ -16,7 +16,7 @@ class WeatherContainer extends React.Component {
 
     cityHandler = () => {
         const apiKey = `cbb5fd1b67ee32baa24dcaaec18392db`
-        const url = `http://api.openweathermap.org/data/2.5/weather?q`
+        const url = `https://api.openweathermap.org/data/2.5/weather?q`
 
         fetch(`${url}=${this.state.city}&appid=${apiKey}`)
             .then(response => response.json())
